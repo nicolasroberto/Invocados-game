@@ -1,0 +1,408 @@
+.dark-primary-color {
+  background: #303f9f;
+}
+.default-primary-color {
+  background: #3f51b5;
+}
+.light-primary-color {
+  background: #c5cae9;
+}
+.text-primary-color {
+  color: #ffffff;
+}
+.accent-color {
+  background: #9e9e9e;
+}
+.primary-text-color {
+  color: #212121;
+}
+.secondary-text-color {
+  color: #757575;
+}
+.divider-color {
+  border-color: #bdbdbd;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+/* FONDO GENERAL */
+.fondo-pantalla {
+  background: url("/img/dungeon2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: auto;
+  background-size: cover;
+}
+/* LAYER OPACIDAD */
+.layer {
+  background-color: rgba(33, 33, 33, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.containergeneral {
+  *display: none;
+  height: 100vh;
+  max-width: 430px;
+  margin: 0 auto;
+}
+/* PANTALLA PRINCIPAL */
+.pantallaPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 20;
+  position: relative;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.pantallaPrincipal h1 {
+  font-family: "dungeonregular";
+  color: #fafafa;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2.571429em;
+}
+.pantallaPrincipal h3 {
+  color: #fafafa;
+  padding-bottom: 1.429em;
+  font-size: 20px;
+}
+/* INPUTS */
+.pantallaPrincipal form {
+  display: flex;
+  flex-direction: column;
+}
+.pantallaPrincipal form input {
+  background-color: transparent;
+  border-color: #fafafa;
+  margin-bottom: 3.571em;
+  color: #fafafa;
+}
+
+/* BOTON */
+.btn-agregar {
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.btn-color {
+  display: flex;
+  justify-content: flex-end;
+  color: #fafafa;
+  font-weight: 500;
+  background-image: url("/img/brick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 1.429em;
+}
+/* CUADRO TEXTO - LORE/GUARDADOS */
+.cuadroTexto {
+  background-color: #21212180;
+  color: #fafafa;
+  padding: 10px;
+  overflow: auto;
+}
+.texto-lore {
+  display: block;
+}
+.italica {
+  font-style: italic !important;
+  font-size: 0.929em !important;
+}
+.lore p {
+  font-size: 13px;
+}
+
+.invocaciones {
+  display: none;
+  flex-direction: column;
+}
+.invocaciones h3 {
+  padding-bottom: 0.429em;
+  text-align: center;
+}
+.invocaciones ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.partidaGuardada {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8%;
+  width: 100%;
+  margin-bottom: 3px;
+  background-color: #3f51b580;
+  color: #212121;
+  font-size: 15px;
+  font-weight: 500;
+}
+.partidaGuardada:hover {
+  background-color: #21212180;
+}
+
+.partidaGuardada p {
+  margin: 0 5px;
+  color: #fafafa;
+}
+.partidaGuardada button {
+  color: #fafafa;
+  font-size: 12px;
+  background-color: #212121;
+}
+.partidaGuardada button:hover {
+  background-color: #fafafa;
+  color: #212121;
+}
+
+/* CONTAINER PANTALLA DE CARGA SOMBREADO */
+.containerCarga {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: flex-end;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.1) 35%,
+    rgba(0, 0, 0, 0.5) 45%,
+    rgba(0, 0, 0, 0.9) 70%
+  );
+}
+/* GIF ANTORCHA */
+.containerCarga img {
+  max-height: 500px !important;
+  max-width: 250px !important;
+}
+
+/* INCIIO CAROUSEL */
+#carouselExampleCaptions {
+  display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-clip: inherit !important;
+}
+.carousel-indicators > button {
+  border-radius: 50%;
+}
+
+.cerrar {
+  position: absolute;
+  height: 30px !important;
+  width: 30px !important;
+  filter: invert(36%) sepia(24%) saturate(5542%) hue-rotate(340deg)
+    brightness(80%) contrast(100%);
+  z-index: 22;
+  top: 10px;
+  right: 10px;
+}
+.cerrar:hover {
+  filter: invert(36%) sepia(24%) saturate(5542%) hue-rotate(340deg)
+    brightness(138%) contrast(150%);
+}
+
+.carousel slide {
+  height: 100%;
+}
+
+.d-none {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-inner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.carousel-inner h2 {
+  color: #fafafa;
+  text-align: center;
+  font-family: "dungeonregular";
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.carousel-item {
+  *height: 100%;
+}
+.item,
+img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.carousel-caption {
+  position: unset !important;
+  color: #212121;
+  background-color: #c5cae980 !important;
+  font-weight: 600 !important;
+  padding: 5px;
+  height: 30vh;
+  overflow: auto;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  bottom: 10px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* PANTALLA VER RESULTADOS Y JUGAR DE NUEVO */
+.verResultados {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 22;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  background-color: #9e9e9e99;
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  left: 10%;
+  border: 2px solid #757575;
+  border-radius: 2px;
+}
+
+.verResultados button {
+  border: 2px solid #757575;
+  border-radius: 2px;
+  background-color: #9e9e9e;
+  width: 100px;
+  color: #212121;
+  font-weight: 600;
+}
+
+.verResultados button:hover {
+  background-color: none;
+  background-image: url("/img/brick.png");
+  color: #fafafa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* VER JUGADA */
+.resultadoPartida {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 50px 10px;
+  display: none;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  color: #fafafa;
+}
+
+.cartasp1 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+.cartasp2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+.cartasp1 img,
+.cartasp2 img {
+  height: 90px !important;
+  width: 90px !important;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.resultadoPartida h1 {
+  padding: 20px 0;
+}
+
+#sino {
+  font-size: 6.143em;
+}
+guardarSalir {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#guardar {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: 600;
+  background-color: #4caf50;
+  border: 2px solid #8bc34a;
+  width: 100px;
+  color: #212121;
+  border-radius: 2px;
+}
+#guardar:hover {
+  background-color: #8bc34a;
+  border: 2px solid #4caf50;
+}
+
+#salirpantalla {
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: 600;
+  background-color: #d32f2f;
+  border: 2px solid #f44336;
+  width: 100px;
+  color: #212121;
+  border-radius: 2px;
+}
+#salirpantalla:hover {
+  background-color: #f44336;
+  border: 2px solid #d32f2f;
+}
+
+@media screen and (min-height: 1024px) {
+  .containergeneral {
+    display: flex;
+    align-items: center;
+  }
+  .layer {
+    height: 1024px !important;
+  }
+  .pantallaPrincipal {
+    height: 1024px;
+  }
+  .containerCarga {
+    height: 1024px;
+  }
+  .resultadoPartida {
+    height: 1024px;
+  }
+  .carousel-inner {
+    height: 1024px;
+  }
+}
